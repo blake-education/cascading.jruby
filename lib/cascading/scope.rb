@@ -7,11 +7,11 @@ module Cascading
     end
 
     def copy
-      Scope.new(Java::CascadingFlow::Scope.new(@scope))
+      Scope.new(Java::CascadingFlowPlanner::Scope.new(@scope))
     end
 
     def self.empty_scope(name)
-      Scope.new(Java::CascadingFlow::Scope.new(name))
+      Scope.new(Java::CascadingFlowPlanner::Scope.new(name))
     end
 
     def self.tap_scope(tap, name)
